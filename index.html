@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Assignment 2 | Projects</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f5f5;
+            color: #171717;
+        }
+
+        header {
+            padding: 60px 20px 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 12px;
+        }
+
+        header p {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .projects {
+            width: min(1200px, 92%);
+            margin: 0 auto 60px;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .project-card {
+            background: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 16px;
+            overflow: hidden;
+
+            transition:
+                transform 0.25s ease,
+                box-shadow 0.25s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .project-content {
+            padding: 22px;
+        }
+
+        .project-content h2 {
+            font-size: 1.3rem;
+            margin-bottom: 18px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .buttons a {
+            flex: 1;
+            text-align: center;
+            text-decoration: none;
+
+            padding: 11px 14px;
+            border-radius: 8px;
+
+            font-size: 0.9rem;
+            font-weight: 600;
+
+            transition: 0.2s ease;
+        }
+
+        .github {
+            background: #171717;
+            color: white;
+        }
+
+        .github:hover {
+            background: #333;
+        }
+
+        .live {
+            background: #2563eb;
+            color: white;
+        }
+
+        .live:hover {
+            background: #1d4ed8;
+        }
+
+        @media (max-width: 900px) {
+            .projects {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding-top: 40px;
+            }
+
+            .projects {
+                grid-template-columns: 1fr;
+            }
+
+            .project-image {
+                height: 230px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Assignment 2</h1>
+        <p>Projects completed for Sheryians Coding School</p>
+    </header>
+
+
+    <main class="projects">
+
+        <!-- Project 1 -->
+        <article class="project-card">
+
+            <img
+                src="./images/project1.png"
+                alt="Project 1 preview"
+                class="project-image"
+            >
+
+            <div class="project-content">
+
+                <h2>Project 1</h2>
+
+                <div class="buttons">
+
+                    <a
+                        href="https://github.com/CyberWarrior1001/Sheryians-Coding-School-Assignments/tree/main/Assignment%202/Project1"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="github"
+                    >
+                        GitHub
+                    </a>
+
+                    <a
+                        href="./Project1/index.html"
+                        target="_blank"
+                        class="live"
+                    >
+                        Live Demo
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- Project 2 -->
+        <article class="project-card">
+
+            <img
+                src="./images/project2.png"
+                alt="Project 2 preview"
+                class="project-image"
+            >
+
+            <div class="project-content">
+
+                <h2>Project 2</h2>
+
+                <div class="buttons">
+
+                    <a
+                        href="https://github.com/CyberWarrior1001/Sheryians-Coding-School-Assignments/tree/main/Assignment%202/Project2"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="github"
+                    >
+                        GitHub
+                    </a>
+
+                    <a
+                        href="./Project2/index.html"
+                        target="_blank"
+                        class="live"
+                    >
+                        Live Demo
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- Project 3 -->
+        <article class="project-card">
+
+            <img
+                src="./images/project3.png"
+                alt="Project 3 preview"
+                class="project-image"
+            >
+
+            <div class="project-content">
+
+                <h2>Project 3</h2>
+
+                <div class="buttons">
+
+                    <a
+                        href="https://github.com/CyberWarrior1001/Sheryians-Coding-School-Assignments/tree/main/Assignment%202/Project3"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="github"
+                    >
+                        GitHub
+                    </a>
+
+                    <a
+                        href="./Project3/index.html"
+                        target="_blank"
+                        class="live"
+                    >
+                        Live Demo
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </main>
+
+</body>
+</html>
